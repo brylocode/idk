@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Source Sans Pro',
+        sans-serif;
+    font-weight: 600;
+    scroll-behavior: smooth;
+    font-size: 13px;
+}
+
+@media(min-width:375px) {
+
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    padding-top: 10vmax;
+    line-height: 1.5;
+    font-size: 1.75rem;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    line-height: calc(4px + 2ex);
+    margin-bottom: 2rem;
+}
+
+@media(min-width:640px) {
+
+    h1,
+    h2,
+    h3 {
+        font-size: 4rem;
+    }
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    background-color: #fff;
+    box-shadow: 0 0 12px 10px #fff, 0 5px 12px 0 #fff;
+    z-index: 2;
+}
+
+@media(min-width:640px) {
+    nav {
+        padding: .5rem 2rem;
+    }
+}
+
+@media(min-width:768px) {
+    nav {
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+nav .logo {
+    width: 120px;
+}
+
+.btn {
+    padding: .4em 1em;
+    border: none;
+    border-radius: 40rem;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 900;
+    background-color: #5522fa;
+    background: linear-gradient(90deg, #5522fa, #0074e4);
+    text-align: center;
+    cursor: pointer;
+    transition: color .2s easy;
+    box-shadow: none;
+}
+
+.btn:hover {
+    color: #00e4b3;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 8px #00e4b3;
+}
+
+.large-btn {
+    margin: 4rem auto;
+    font-size: 1.65rem;
+}
+
+@media (min-width: 640px) {
+    .large-btn {
+        font-size: 2rem;
+    }
+}
+
+.scribble {
+    display: none;
+    position: absolute;
+    right: 10rem;
+    top: 5rem;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+@media(min-width:1024px) {
+    .scribble {
+        display: block;
+    }
+}
+
+main {
+    max-width: 715px;
+    margin: 0 auto;
+    padding: 5vmax 2rem 2rem;
+}
+
+main p {
+    margin-bottom: 1.5rem;
+}
+
+.divider {
+    display: block;
+    margin: 3rem auto 0.5rem;
+}
+
+
+
+.centered {
+    text-align: center;
+}
+
+.contact-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-element .contact-btn {
+    font-size: 2rem;
+    margin: 4rem auto;
+}
+
+.contact-element small {
+    margin-top: -3rem;
+    font-size: 1rem;
+}
+
+.portfolio-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-element .portfolio-btn {
+    font-size: 2rem;
+    margin: 4rem auto;
+}
+
+.portfolio-element small {
+    margin-top: -3rem;
+    font-size: 1rem;
+}
+
+.what-you-get {
+    margin: 6rem auto 0;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.what-you-get h2 {
+    font-size: 3rem;
+    display: block;
+    position: relative;
+    width: 100%;
+
+}
+
+.what-you-get h2::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #7701a2, #ec8683);
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% + 3px);
+    z-index: -1;
+}
+
+.what-you-get .line-cover {
+    background: #fff;
+    padding: 0 1rem;
+}
+
+.what-you-get-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.what-you-get-grid li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.what-you-get h3 {
+    margin: 0;
+    font-size: 1.375rem;
+}
+
+.what-you-get p {
+    font-size: 1.125rem;
+    margin: 0;
+    color: #666;
+}
+
+.what-you-get img {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+footer {
+    margin-bottom: 4rem;
+    margin-top: 8rem;
+}
+
+.footer-bye {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    margin-bottom: 0;
+}
+
+.footer-credits {
+    margin-top: 4rem;
+    padding: 0 1rem;
+}
+
+.footer-credits p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: .25rem;
+}
+
+.footer-credits .small {
+    font-size: 1rem;
+    font-style: italic;
+    color: #666;
+}
